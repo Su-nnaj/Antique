@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antique Coffee</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px; 
+        }
+       
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <header class="fixed-top bg-white">
+        <div class="container">
+            <div class="row align-items-center justify-content-between py-3">
+                <div class="col-auto" >
+                    <a href="index.html" class="d-inline-flex link-body-emphasis text-decoration-none nav-link">
+                        <h1 class="antique-logo">ANTIQUE</h1>
+                    </a>
+                </div>
+
+                <div class="col-auto d-lg-none">
+                    <div class="burger-menu">
+                        <div class="burger-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <nav class="col-12 col-lg-auto mt-3 mt-lg-0 d-none d-lg-block">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item"><a href="index.html#home" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="menu.html#menu" class="nav-link">Coffee Menu</a></li>
+                        <li class="nav-item"><a href="index.html#about" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="col-auto mt-3 mt-lg-0 d-none d-lg-block">
+                    <button type="button" class="btn btn-outline-primary p-sm-4" style="padding: 8px 30px !important;">Login</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Add this to create space below the fixed header -->
+    <div style="height: 80px;"></div>
+
+    <!-- mobile menu -->
+    <div class="mobile-menu">
+        <nav>
+            <ul>
+                <li><a href="index.html#home" class="nav-link px-2">Home</a></li>
+                <li><a href="menu.html#menu" class="nav-link px-2">Coffee Menu</a></li>
+                <li><a href="index.html#about" class="nav-link px-2">About</a></li>
+                <li><a href="index.html#contact" class="nav-link px-2">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-buttons ">
+            <button type="button" class="btn btn-outline-primary me-2">Login</button>
+          
+        </div>
+    </div>
+
+
+
+    <section id="menu" class="py-5">
+        <div class="container">
+            <h2 class="text-center best-seller-title mb-5">Your Cafe Menu</h2>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-xl-3 mb-4">
+                    <div class="coffee-item shadow">
+                        <img src="./4th-coffeee.png" alt="Espresso" class="img-fluid rounded mb-3">
+                        <h4 class="coffee-name">Cafe Latte</h4>
+                        <div class="d-flex justify-content-between align-items-center flex-wrap">
+                            <span class="price">$2.99</span>
+                            <div class="coffee-actions">
+                                <button class="btn btn-primary btn-sm" aria-label="Add to cart">
+                                    <i class="bi bi-cart-plus"></i>
+                                </button>
+                                <button class="btn btn-outline-secondary btn-sm ms-1" aria-label="Add to favorites">
+                                    <i class="bi bi-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-3 mb-4">
+                    <div class="coffee-item shadow">
+                        <img src="./sec-page-coffe.png" alt="Americano" class="img-fluid rounded mb-3">
+                        <h4 class="coffee-name">Americano</h4>
+                        <div class="d-flex justify-content-between align-items-center flex-wrap">
+                            <span class="price">$3.99</span>
+                            <div class="coffee-actions">
+                                <button class="btn btn-primary btn-sm" aria-label="Add to cart">
+                                    <i class="bi bi-cart-plus"></i>
+                                </button>
+                                <button class="btn btn-outline-secondary btn-sm ms-1" aria-label="Add to favorites">
+                                    <i class="bi bi-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-3 mb-4">
+                    <div class="coffee-item shadow">
+                        <img src="./3rd-coffee.png" alt="Cappuccino" class="img-fluid rounded mb-3">
+                        <h4 class="coffee-name">Cappuccino</h4>
+                        <div class="d-flex justify-content-between align-items-center flex-wrap">
+                            <span class="price">$4.49</span>
+                            <div class="coffee-actions">
+                                <button class="btn btn-primary btn-sm" aria-label="Add to cart">
+                                    <i class="bi bi-cart-plus"></i>
+                                </button>
+                                <button class="btn btn-outline-secondary btn-sm ms-1" aria-label="Add to favorites">
+                                    <i class="bi bi-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-3 mb-4">
+                    <div class="coffee-item shadow">
+                        <img src="./5th-coffe.png" alt="Latte" class="img-fluid rounded mb-3">
+                        <h4 class="coffee-name">Espresso </h4>
+                        <div class="d-flex justify-content-between align-items-center flex-wrap">
+                            <span class="price">$4.99</span>
+                            <div class="coffee-actions">
+                                <button class="btn btn-primary btn-sm" aria-label="Add to cart">
+                                    <i class="bi bi-cart-plus"></i>
+                                </button>
+                                <button class="btn btn-outline-secondary btn-sm ms-1" aria-label="Add to favorites">
+                                    <i class="bi bi-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="best-seller-section py-5">
+        <div class="container">
+            <h2 class="best-seller-title">Our Artisan Breads</h2>
+            <p class="best-seller-text">Complement your coffee with our freshly baked artisan breads, crafted daily with the finest ingredients.</p>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-xl-3 mb-4">
+                    <div class="coffee-item shadow">
+                        <img src="./bread-1.png" alt="Sourdough Bread" class="img-fluid rounded mb-3">
+                        <h4 class="coffee-name">Chocolate Croissant</h4>
+                        <div class="d-flex justify-content-between align-items-center flex-wrap">
+                            <span class="price">$5.99</span>
+                            <div class="coffee-actions">
+                                <button class="btn btn-primary btn-sm" aria-label="Add to cart">
+                                    <i class="bi bi-cart-plus"></i>
+                                </button>
+                                <button class="btn btn-outline-secondary btn-sm ms-1" aria-label="Add to favorites">
+                                    <i class="bi bi-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-3 mb-4">
+                    <div class="coffee-item shadow">
+                        <img src="./bread-2.png" alt="Whole Grain Loaf" class="img-fluid rounded mb-3">
+                        <h4 class="coffee-name">Whole Grain Loaf</h4>
+                        <div class="d-flex justify-content-between align-items-center flex-wrap">
+                            <span class="price">$4.99</span>
+                            <div class="coffee-actions">
+                                <button class="btn btn-primary btn-sm" aria-label="Add to cart">
+                                    <i class="bi bi-cart-plus"></i>
+                                </button>
+                                <button class="btn btn-outline-secondary btn-sm ms-1" aria-label="Add to favorites">
+                                    <i class="bi bi-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-3 mb-4">
+                    <div class="coffee-item shadow">
+                        <img src="./bread-3.png" alt="Ciabatta" class="img-fluid rounded mb-3">
+                        <h4 class="coffee-name">Almond Delight Donut</h4>
+                        <div class="d-flex justify-content-between align-items-center flex-wrap">
+                            <span class="price">$4.49</span>
+                            <div class="coffee-actions">
+                                <button class="btn btn-primary btn-sm" aria-label="Add to cart">
+                                    <i class="bi bi-cart-plus"></i>
+                                </button>
+                                <button class="btn btn-outline-secondary btn-sm ms-1" aria-label="Add to favorites">
+                                    <i class="bi bi-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-3 mb-4">
+                    <div class="coffee-item shadow">
+                        <img src="./bread-4.png" alt="Baguette" class="img-fluid rounded mb-3">
+                        <h4 class="coffee-name">Double Delight Waffle</h4>
+                        <div class="d-flex justify-content-between align-items-center flex-wrap">
+                            <span class="price">$3.99</span>
+                            <div class="coffee-actions">
+                                <button class="btn btn-primary btn-sm" aria-label="Add to cart">
+                                    <i class="bi bi-cart-plus"></i>
+                                </button>
+                                <button class="btn btn-outline-secondary btn-sm ms-1" aria-label="Add to favorites">
+                                    <i class="bi bi-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>

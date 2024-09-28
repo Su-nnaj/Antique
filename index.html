@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antique Coffee</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px; 
+        }
+       
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <header class="fixed-top bg-white">
+        <div class="container">
+            <div class="row align-items-center justify-content-between py-3">
+                <div class="col-auto" >
+                    <a href="index.html" class="d-inline-flex link-body-emphasis text-decoration-none nav-link">
+                        <h1 class="antique-logo">ANTIQUE</h1>
+                    </a>
+                </div>
+
+                <div class="col-auto d-lg-none">
+                    <div class="burger-menu">
+                        <div class="burger-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <nav class="col-12 col-lg-auto mt-3 mt-lg-0 d-none d-lg-block">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item"><a href="index.html#home" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="menu.html#menu" class="nav-link" id="coffee-menu-link">Coffee Menu</a></li>
+                        <li class="nav-item"><a href="index.html#about" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="col-auto mt-3 mt-lg-0 d-none d-lg-block">
+                    <button type="button" class="btn btn-outline-primary p-sm-4" style="padding: 8px 30px !important;">Login</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Add this to create space below the fixed header -->
+    <div style="height: 80px;"></div>
+
+    <!-- mobile menu -->
+    <div class="mobile-menu">
+        <nav>
+            <ul>
+                <li><a href="index.html#home" class="nav-link px-2">Home</a></li>
+                <li><a href="menu.html#menu" class="nav-link px-2">Coffee Menu</a></li>
+                <li><a href="index.html#about" class="nav-link px-2">About</a></li>
+                <li><a href="index.html#contact" class="nav-link px-2">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-buttons ">
+            <button type="button" class="btn btn-outline-primary me-2">Login</button>
+          
+        </div>
+    </div>
+
+<!-- home page -->
+<section class="home-page-section" id="home">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center h-100">
+            <div class="col-md-6 mb-4 mb-md-0 home-page-text">
+                <h2 class="home-title">Timeless <br>
+                    Coffee  <br>
+                    Experience</h2>
+                <p class="mt-4 mb-4">Discover our passion for coffee and commitment to quality.</p>
+                <button type="button" class="btn btn-primary">About Us</button>
+            </div>
+            <div class="col-md-6">
+               <div class="home-page-image p-3 p-md-4 p-lg-5 mb-md-5">
+                <img src="./home-coffee.png" alt="home-page-image" class="img-fluid" >
+               </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- best seller coffee -->
+    <section class="best-seller-section py-5" >
+        <div class="container">
+            <h1 class="best-seller-title">Best Seller Coffee</h1>
+            <p class="best-seller-text">Indulge in our most popular brews, carefully selected and roasted to perfection. Experience the rich flavors and aromas that have made these coffees our customers' favorites.</p>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-4 order-md-3 mb-4 ">
+                    <div class="coffee-item shadow">
+                        <img src="./4th-coffeee.png" alt="Best Seller Coffee" class="img-fluid rounded mb-3">
+                        <h4 class="coffee-name">Coffe Latte</h4>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="price">$4.99</span>
+                            <div class="coffee-actions">
+                                <button class="btn btn-outline-secondary btn-sm me-2" aria-label="Add to favorites">
+                                    <i class="bi bi-heart"></i>
+                                </button>
+                                <button class="btn btn-primary btn-sm" aria-label="Add to cart">
+                                    <i class="bi bi-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 order-md-1 mb-4">
+                    <div class="coffee-item shadow">
+                        <img src="./sec-page-coffe.png" alt="Americano" class="img-fluid rounded mb-3">
+                        <h4 class="coffee-name">Americano</h4>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="price">$3.99</span>
+                            <div class="coffee-actions">
+                                <button class="btn btn-outline-secondary btn-sm me-2" aria-label="Add to favorites">
+                                    <i class="bi bi-heart"></i>
+                                </button>
+                                <button class="btn btn-primary btn-sm" aria-label="Add to cart">
+                                    <i class="bi bi-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 order-md-2 mb-4">
+                    <div class="coffee-item shadow">
+                        <img src="./3rd-coffee.png" alt="Cappuccino" class="img-fluid rounded mb-3">
+                        <h4 class="coffee-name">Cappuccino</h4>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="price">$4.49</span>
+                            <div class="coffee-actions">
+                                <button class="btn btn-outline-secondary btn-sm me-2" aria-label="Add to favorites">
+                                    <i class="bi bi-heart"></i>
+                                </button>
+                                <button class="btn btn-primary btn-sm" aria-label="Add to cart">
+                                    <i class="bi bi-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- about us -->
+    <section id="about" class="py-5" >
+        <div class="container h-100">
+            <h2 class="text-center best-seller-title">About Us</h2>
+            <div class="row align-items-center h-100">
+                <div class="col-lg-6 lg-4 mb-md-0">
+                    <img src="./about-page-coffee.png" alt="About Us Coffee" class="img-fluid" style="  width: 100%;">
+                </div>
+                <div class="col-lg-6 mb-md-5">
+                    <h3 class="mb-4 best-seller-text">Our Coffee Journey</h3>
+                    <p class="best-seller-text">
+                        At our coffee shop, we're passionate about delivering the finest coffee experience to our customers. Our journey began with a simple love for quality coffee and has grown into a commitment to sourcing the best beans, perfecting our roasting techniques, and creating a warm, welcoming atmosphere for coffee lovers.
+                    </p>
+                    <h3 class="mt-5 mb-4 best-seller-text">Our Philosophy</h3>
+                    <p class="best-seller-text">
+                        We believe that great coffee brings people together. Whether you're starting your day, catching up with friends, or need a midday pick-me-up, we're here to serve you the perfect cup. Our skilled baristas are dedicated to crafting each drink with care, ensuring that every sip is a moment to savor.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <div class="container h-100">
+            <h2 class="text-center best-seller-title mb-5 animate__animated animate__fadeInDown">Contact Us</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6">
+                    <div class="contact-info p-4 rounded bg-gradient animate__animated animate__fadeInLeft h-100">
+                        <h3 class="best-seller-text mb-4">Open Hours</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2 d-flex justify-content-between">
+                                <span>Monday - Thursday:</span>
+                                <span>9am - 10pm</span>
+                            </li>
+                            <li class="mb-2 d-flex justify-content-between">
+                                <span>Friday:</span>
+                                <span>9am - 11pm</span>
+                            </li>
+                            <li class="mb-2 d-flex justify-content-between">
+                                <span>Saturday:</span>
+                                <span>10am - 11pm</span>
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                <span>Sunday:</span>
+                                <span>10am - 9pm</span>
+                            </li>
+                        </ul>
+                        <h3 class="best-seller-text mb-4 mt-5">Location</h3>
+                        <p><i class="bi bi-geo-alt-fill me-2"></i>123 Coffee Street, Beantown, CT 12345</p>
+                        <p><i class="bi bi-telephone-fill me-2"></i>(123) 456-7890</p>
+                        <p><i class="bi bi-envelope-fill me-2"></i>info@antiquecoffee.com</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <form id="contactForm" class="p-4 rounded bg-gradient animate__animated animate__fadeInRight h-100 d-flex flex-column">
+                        <h3 class="best-seller-text mb-4">Make a Reservation</h3>
+                        <div class="mb-3">
+                            <input type="text" class="form-control form-control-lg border-0" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control form-control-lg border-0" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="datetime-local" class="form-control form-control-lg border-0" id="datetime" required>
+                        </div>
+                        <div class="mb-3 flex-grow-1">
+                            <textarea class="form-control form-control-lg border-0 h-100" id="message" placeholder="Special Requests"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg w-100 animate__animated animate__pulse animate__infinite">Book Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5 class="mb-3">Antique Coffee</h5>
+                    <p>Serving the finest coffee since 2021. Experience the rich history in every cup.</p>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-unstyled ">
+                        <li><a href="#home" class="text-light text-decoration-none">Home</a></li>
+                        <li><a href="#menu" class="text-light text-decoration-none">Menu</a></li>
+                        <li><a href="#about-us" class="text-light text-decoration-none">About Us</a></li>
+                        <li><a href="#contact" class="text-light text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="mb-3">Connect With Us</h5>
+                    <div class="d-flex">
+                        <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-light me-3"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-light me-3"><i class="bi bi-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2024 Antique Coffee. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-light me-2">Privacy Policy</a>
+                    <a href="#" class="text-light">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>

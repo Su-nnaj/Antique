@@ -1,0 +1,516 @@
+body {
+    color: black;
+    background-color: #f7f3ef !important;
+    transition: opacity 0.5s ease;
+}
+
+.nav-link {
+    color: rgba(0, 0, 0, 0.925) !important;
+    font-size: 0.9rem; /* Adjust as needed */
+}
+
+.nav-link:hover {
+    color: black !important;
+}
+
+ .btn-outline-primary {
+    background-color: #442403 !important;
+    border-color: #442403 !important;
+    color: white !important;
+    font-weight: bold !important;
+  
+    font-size: 0.9rem !important;
+    border-radius: 1.2rem !important;
+}
+
+@media (min-width: 576px) {
+    .btn-outline-primary {
+        padding: 6px 15px !important;
+        font-size: 0.95rem !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .btn-outline-primary {
+        padding: 10px 30px !important;
+        font-size: 1rem !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .btn-outline-primary {
+        padding: 10px 3px !important;
+        font-size: 1.05rem !important;
+    }
+}
+
+.btn-outline-primary:hover {
+    background-color: #000000 !important;
+    color: white !important;
+}
+.btn-primary{
+    background-color: #442403 !important;
+    border-color: #442403 !important;
+    color: white !important;
+    font-weight: bold !important;
+    padding: 10px 35px !important;
+    border-radius: 2.2rem !important;
+}
+/* Add these styles to your existing CSS file */
+
+.burger-menu {
+    position: relative;
+    z-index: 1000;
+}
+
+.burger-icon {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.burger-icon span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #000;
+    border-radius: 3px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.burger-icon span:nth-child(1) { top: 0px; }
+.burger-icon span:nth-child(2) { top: 8px; }
+.burger-icon span:nth-child(3) { top: 16px; }
+
+.burger-icon.open span:nth-child(1) {
+    top: 8px;
+    transform: rotate(135deg);
+}
+
+.burger-icon.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+}
+
+.burger-icon.open span:nth-child(3) {
+    top: 8px;
+    transform: rotate(-135deg);
+}
+
+/* Hide burger menu on larger screens */
+@media (min-width: 768px) {
+    .burger-menu {
+        display: none;
+    }
+}
+
+/* Show burger menu on smaller screens */
+@media (max-width: 991px) {
+    .burger-menu {
+        display: block;
+    }
+
+    /* Hide the regular nav and buttons on mobile */
+    .nav.col-12.col-md-auto,
+    .col-md-3.text-end {
+        display: none;
+    }
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.95);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+    z-index: 999;
+}
+
+.mobile-menu.open {
+    left: 0;
+}
+
+.mobile-menu ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.mobile-menu ul li {
+    margin: 20px 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.5s;
+}
+
+.mobile-menu.open ul li {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.mobile-menu ul li a {
+    font-size: 24px;
+    position: relative;
+    padding: 5px 10px;
+}
+
+.mobile-menu ul li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    transition: 0.5s;
+}
+
+.mobile-menu ul li a:hover::before {
+    border-color: #007bff;
+    box-shadow: 0 0 10px #007bff;
+}
+
+.mobile-buttons {
+    margin-top: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+h1 {
+    font-size: 1.5rem; 
+}
+
+.nav-link {
+    font-size: 0.9rem; 
+}
+
+/* Responsive text for larger screens */
+@media (min-width: 768px) {
+    h1 {
+        font-size: 2rem; 
+    }
+
+    .nav-link {
+        font-size: 1rem; 
+    }
+}
+
+
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 2.5rem; 
+    }
+
+    .nav-link {
+        font-size: 1.1rem;
+    }
+}
+
+
+.btn {
+    font-size: 0.9rem; 
+}
+
+@media (min-width: 768px) {
+    .btn {
+        font-size: 1rem; 
+    }
+}
+
+
+/*home page*/
+
+.home-page-text h2 {
+   
+    color: #442403 !important;
+    font-size: calc(2rem + 4vw) !important;
+    line-height: 1.2 !important;
+    transition: font-size 0.3s ease !important;
+}
+.home-page-section {
+    height: 100vh !important;
+    display: flex !important;
+    align-items: center !important;
+    padding-bottom: 50px !important;
+}
+
+.home-title {
+    font-family: 'League Spartan', sans-serif !important;
+    font-size: 2.5rem !important;
+    font-weight: bold !important;
+    line-height: 1.2 !important;
+    margin-top: 3.5rem !important; 
+}
+
+@media (min-width: 768px) {
+    .home-title {
+        font-size: 3rem !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .home-title {
+        font-size: 3.5rem !important;
+    }
+}
+
+.home-page-image img {
+    max-height: 70vh !important; /* Reduced from 80vh */
+    object-fit: contain !important;
+}
+@media (min-width: 380px) {
+    .home-page-text h2 {
+        font-size: calc(3rem + 4vw) !important;
+    }
+}
+
+@media (min-width: 576px) {
+    .home-page-text h2 {
+        font-size: calc(3.5rem + 4vw) !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .home-page-text h2 {
+        font-size: calc(3rem + 3vw) !important;
+    }
+    .home-page-text {
+        margin-top: 2rem !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .home-page-text h2 {
+        font-size: calc(3.5rem + 2.5vw) !important;
+    }
+    .home-page-image {
+        margin-top: 3rem !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .home-page-text h2 {
+        font-size: calc(4rem + 2vw) !important;
+    }
+}
+
+@media (min-width: 1400px) {
+    .home-page-text h2 {
+        font-size: 6rem !important;
+    }
+}
+
+@media (max-width: 991px) {
+    header .col-auto:last-child {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+    }
+    
+    .antique-logo {
+        font-size: 1.5rem;
+    }
+    
+    .btn-outline-primary {
+        padding: 5px 15px !important;
+        font-size: 0.9rem !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .antique-logo {
+        font-size: 2rem;
+    }
+    
+    .btn-outline-primary {
+        padding: 8px 20px !important;
+        font-size: 1rem !important;
+    }
+}
+
+.antique-logo {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+/* Header navigation styles */
+.nav-item {
+    margin: 0 0.5rem;
+}
+
+@media (min-width: 992px) {
+    .nav-item {
+        margin: 0 1rem;
+    }
+}
+
+
+/* best seller coffee */
+
+
+.coffee-item {
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.best-seller-title{
+    font-family: 'League Spartan', sans-serif;
+    font-weight: bold;
+    color: #442403;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.best-seller-text{
+    font-family: 'League Spartan', sans-serif;
+    font-weight: bold;
+    color: #442403;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.coffee-item:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.coffee-item img {
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.coffee-name {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: bold;
+    color: #442403;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-weight: bold;
+    color: #442403;
+}
+
+.coffee-actions .btn {
+    padding: 8px 12px;
+    border-radius: 20px;
+}
+
+.coffee-actions .btn-outline-secondary {
+    color: #442403;
+    border-color: #442403;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.coffee-actions .btn-outline-secondary:hover {
+    background-color: #442403;
+    color: white;
+}
+
+.coffee-actions .btn-primary {
+    background-color: #442403;
+    border-color: #442403;
+}
+
+.coffee-actions .btn-primary:hover {
+    background-color: #2e1802;
+}
+
+/* contact us */
+
+
+
+#contact {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+ 
+}
+
+.contact-info, #contactForm {
+    background-color: #ffffff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.contact-info:hover, #contactForm:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.form-control {
+    background-color: #f8f9fa !important;
+    border: none;
+    border-bottom: 2px solid #dee2e6;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    background-color: #ffffff !important;
+    box-shadow: none;
+    border-bottom-color: #3f2a03;
+}
+
+.btn-primary {
+    background-color: #3f2a03;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #3f2a03;
+    transform: translateY(-2px);
+    box-shadow: 0 0.5rem 1rem #3f2a03;
+}
+
+
+
+@media (max-width: 767px) {
+ 
+    
+    .contact-info, #contactForm {
+        height: auto;
+        margin-bottom: 2rem;
+    }
+}
+
+
+#about-us {
+    margin-bottom: 3rem;
+}
+
+@media (max-width: 992px) {
+    #about-us {
+        margin-bottom: 4rem; 
+    }
+}
